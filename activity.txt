@@ -1,0 +1,37 @@
+3.read about the difference between window,screen and document in java script
+
+1.window Object:
+
+The window object is the top-level object in the browser's object model. It represents the browser window or tab.
+All global JavaScript variables and functions are defined on the window object. For example, if you declare a global variable like var x = 10;, it becomes a property of the window object (window.x).
+It provides methods for interacting with the browser window, such as opening or closing windows, setting timeouts, and navigating to URLs.
+Example:
+// Accessing a global variable
+console.log(window.x); // 10
+
+// Opening a new window
+window.open("https://www.example.com", "_blank");
+
+2.screen Object:
+
+The screen object represents the user's screen or display.
+It provides information about the screen's width, height, color depth, and other properties.
+Developers can use this information to create responsive designs or adjust the layout based on the user's screen characteristics.
+Example:
+// Getting screen width and height
+console.log(screen.width);  // Width of the screen
+console.log(screen.height); // Height of the screen
+
+3.document Object:
+
+The document object represents the HTML document loaded in the browser.
+It provides methods and properties for interacting with the content of the document, such as manipulating HTML elements, handling events, and modifying the document structure.
+DOM (Document Object Model) manipulation is done through the document object.
+Example:
+// Changing the content of an HTML element
+document.getElementById("myElement").innerHTML = "New Content";
+
+// Adding an event listener
+document.getElementById("myButton").addEventListener("click", function() {
+  alert("Button Clicked!");
+});
